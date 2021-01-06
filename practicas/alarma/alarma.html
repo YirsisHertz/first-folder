@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="Yirsis Hertz">
+    <title>Alarma Despertador</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="../../logo/favicon.ico">
+</head>
+<body>
+    <form class="form">
+        <input type="number" max="23" min="0" id="horas">
+        <input type="number" max="59" min="0" id="minutos">
+        <input type="number" max="59" min="0" id="segundos">
+        <input type="button" id="programar" value="Iniciar">
+    </form>
+    
+    <div class="alarma">
+        <div class="linea-superior">
+            <div class="numeros">
+                <div id="h"></div>
+                <div class="puntos">:</div>
+                <div id="m"></div>
+                <div class="puntos">:</div>
+                <div id="s"></div>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="audio" src="alerta/alarm.mp3"></audio>
+    
+    <script src="js/alet.js"></script>
+</body>
+</html>

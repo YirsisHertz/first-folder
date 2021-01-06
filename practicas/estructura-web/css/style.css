@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar
+{
+    width: 10px;
+    background:#F5F5F5;
+}
+body::-webkit-scrollbar-thumb
+{
+    border-radius:10px;
+    background: #FFE41E;
+}
+
+.header
+{
+    height: 100px;
+    background: #DBE217;
+    padding: 0 20px;
+    color: snow;
+}
+.logo
+{
+    text-shadow: 2px 2px 3px #333;
+    line-height: 100px;
+    float: left;
+    text-transform:inherit;
+}
+.menu
+{
+    float: right;
+    line-height: 100px;
+}
+.menu a
+{
+    color: snow;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+.show-menu-btn
+{
+    float: right;
+}
+.show-menu-btn i
+{
+   line-height: 100px; 
+}
+.show-menu-btn, .hide-menu-btn
+{
+    transition: 0.4s;
+    font-size: 1.3em;
+    cursor: pointer;
+    display:none;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover
+{
+    color: #333;
+}
+#chk
+{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+.content
+{
+    padding: 0 1.4em;
+}
+.content h1
+{
+    text-shadow: 0 2px 3px #333;
+    text-transform: uppercase;
+}
+.content p
+{
+    text-align: justify;
+    padding: 3%;
+}
+
+footer
+{
+    text-align: center;
+    height: 100px;
+    background: #DBE217;
+    padding: 0 20px;
+    color: snow;
+}
+
+footer .correo
+{
+    line-height: 10px;
+    padding: 10px 0;
+    text-shadow: 2px 2px 3px #333;
+}
+footer .autor
+{
+    line-height: 10px;
+    padding: 10px 0;
+    text-shadow: 2px 2px 3px #333;
+}
+footer .red
+{
+    line-height: 10px;
+    padding: 10px 0;
+    text-shadow: 2px 2px 3px #333;
+
+}
+@media screen and (max-width:800px)
+{
+ .show-menu-btn,.hide-menu-btn
+    {
+        display: block;
+    }
+    .menu
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #AAE125;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 2em 0;
+        line-height: normal;
+        transition: 0.7s;
+        
+    }
+    .menu a
+    {
+        display: block;
+        padding: 20px;
+    }
+    .hide-menu-btn
+    {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #chk:checked ~ .menu
+    {
+        right: 0;
+    }
+}

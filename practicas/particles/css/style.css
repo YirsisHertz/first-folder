@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Bitter|Indie+Flower&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#particles-js
+{
+    background: rgb(164,157,102);
+    background: linear-gradient(90deg, rgba(164,157,102,1) 0%, rgba(255,119,0,1) 51%, rgba(29,22,15,1) 92%);
+    background-size: cover;
+    height: 100%;
+}
+.logo
+{
+    text-align: center;
+    text-shadow: 0 0 5px #FF0000;
+    color: chartreuse;
+    font-family: Bitter;
+    margin-top: 25px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.welcome
+{
+    margin-left: 5%;
+    position: absolute;
+    color: #fff;
+    font-family: sans-serif;
+}
+.welcome h1
+{
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    font-family: Anton;
+    margin-top: 1em;
+    letter-spacing: 4px;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+.welcome p
+{
+    text-align: center;
+    font-family: Indie Flower;
+    font-size: 16px;
+    margin-top: 25px;
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+    
+}
+/*Scroll Personalizado*/
+body::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #1d160f;
+}
+body::-webkit-scrollbar-thumb
+{
+    background-color: mediumvioletred;
+    border-radius: 13px;
+    border-right: 2px solid;
+}

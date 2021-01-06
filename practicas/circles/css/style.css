@@ -1,0 +1,13 @@
+body
+{
+    background: #000;
+}
+.circle
+{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    border-radius: 50%;
+    
+}

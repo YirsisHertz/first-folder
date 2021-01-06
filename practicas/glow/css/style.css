@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+.glow
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.glow span
+{
+    font-weight:bolder;
+    color:snow;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    animation: animate 2s linear infinite;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 2em;
+    margin: 0 4px;
+}
+@keyframes animate
+{
+    0%
+    {
+        color: #fb0094;
+        text-shadow: 0 2px 10px #fb0094;
+    }
+    33.3%
+    {
+        color: #0000ff;
+        text-shadow: 0 2px 10px #0000ff;
+    }
+    66.6%
+    {
+        color: #00ff00;
+        text-shadow: 0 2px 10px #00ff00;
+    }
+    88.8%
+    {
+        color:#ffff00;
+        text-shadow: 0 2px 10px #ffff00;
+    }
+    100%
+    {
+        color: #ff0000;
+        text-shadow: 0 2px 10px #ff0000;
+    }
+}
+.glow span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+
+.glow span:nth-child(2)
+{
+    animation-delay: 0.1s;
+}
+
+.glow span:nth-child(3)
+{
+    animation-delay: 0.2s;
+}
+
+.glow span:nth-child(4)
+{
+    animation-delay: 0.3s;
+}
+
+.glow span:nth-child(5)
+{
+    animation-delay: 0.4s;
+}
+
+.glow span:nth-child(6)
+{
+    animation-delay: 0.5s;
+}
+.glow span:nth-child(7)
+{
+    animation-delay: 0.6s;
+}
+.glow span:nth-child(8)
+{
+    animation-delay: 0.7s;
+}
+

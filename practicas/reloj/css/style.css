@@ -1,0 +1,60 @@
+/*
+importo el tipo de fuente que usare en este proyecto
+ */
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
+
+*
+{
+    /*
+    aqui defines el fondo, tipo de fuente que en mi caso
+    uso una de google fonts que tome de manera aleatorea
+    y el color de letras 
+     */
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color:snow;
+    font-family: 'Prompt', sans-serif;
+}
+
+.hora
+{
+    /*
+    aqui colocas el fondo para hacer un contraste
+     */
+    background: #222;
+    padding: 1em;
+    border-radius: 2em;
+    /*
+        aqui centras el contenido
+     */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*
+    por ultimo definimos el tamaño de fuente
+     */
+    font-size: 3em;
+}
+
+@media screen and (max-width: 750px){
+    .hora
+{
+    font-size:2em;
+}
+}
+
+
+@media screen and (max-width: 500px){
+    .hora
+{
+    font-size: 1.5em;
+}
+}
+@media screen and (max-width: 370px){
+    .hora
+{
+    font-size: 1em;
+}
+}

@@ -1,0 +1,44 @@
+body {
+  margin:0;
+	padding:0;
+	font-family:'Montserrat', sans-serif;
+	background:#111;
+}
+header h1{
+	background:#222;
+	color:snow;
+	text-align:center;
+	margin:0 0 15px 0;
+	padding:5px;
+}
+
+.container{
+	width:100%;
+	height:100vh;
+	display:inline-flex;
+}
+
+.ta{
+	background:#ddd;
+	margin:10px;
+	padding:4px;
+	width:100%;
+	height:95%;
+}
+
+.view{
+	background:#ddd;
+	margin:10px;
+	padding:4px;
+	width:100%;
+	height:95%;
+}
+
+footer{
+	font-size: 1.4em;
+	background:#222;
+	color:snow;
+	text-align:center;
+	margin:10px 0 0 0;
+	padding:5px;
+}
